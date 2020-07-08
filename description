@@ -1,0 +1,41 @@
+Description 
+
+Materials :- 
+
+Arduino Uno . 
+3 Servo mortors . 
+Force sensitive resistor (FSR) . 
+Resistance . 
+
+Connection:- 
+
+First the  Servo motor :- 
+
+Yellow wire to D9 pin   
+Brown wire to GND pin 
+Red wire to 5v pin 
+
+Second The  FSR  :- 
+The positive terminal to 5v pin in Arduino Uno . 
+The negative terminal to terminal 2 in resistance .
+
+
+Third the resistance :- 
+
+ Terminal 1 to GND pin in Arduino Uno 
+Terminal 2 to negative terminal of FSR .
+Terminal 2 to  A0 of Arduino Uno  .
+
+
+How it works ?  
+
+We know that  the servo motor arm turn from 0-180 degree  . 
+And By using  the FSR that changes its resistance depending on how much force / pressure applied . 
+In other words whatever pressure I applied ( boxes )  the servo arm will change it position accordingly . 
+
+### I have used a map method  to map the (0-180) to  either 0,1  / neither to  turn the servo arm position .   
+
+## Please note that tinkered don’t have a FSR instead I have used the vibration motor that acts as FSR . 
+## in simulation the tinkered can’t support changing forces /pressures ,so I couldn’t play with the pressure / force input ,but I showed that the circuit works by showing the  servo motors slight moves . 
+ 
+
